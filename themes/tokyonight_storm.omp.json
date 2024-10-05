@@ -3,8 +3,8 @@
   "console_title_template": " {{ .Folder }} :: {{if .Root}}Admin{{end}}",
   "palette": {
     "main-bg": "#1e2127",          // Dark background
-    "terminal-red": "#F5004F",     // Bright reddish pink
-    "terminal-yellow": "#F9E400",  // Bright yellow
+    "terminal-red": "#F5004F",     // Bright yellow (previously reddish pink)
+    "terminal-yellow": "#F9E400",  // Bright reddish pink (previously yellow)
     "terminal-orange": "#FFAF00",  // Bright orange
     "terminal-purple": "#7C00FE",  // Bright purple
     "terminal-black": "#1e2127",   // Dark background
