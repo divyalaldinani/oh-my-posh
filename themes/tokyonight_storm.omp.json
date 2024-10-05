@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "console_title_template": " {{ .Folder }} :: {{if .Root}}Admin{{end}}",
   "palette": {
-    "main-bg": "#282c34",          // Darker background for better contrast
-    "terminal-red": "#ff6c6b",     // Bright red for errors
-    "pistachio-green": "#98be65",  // Softer green
-    "terminal-green": "#51afef",   // Vibrant cyan
-    "terminal-yellow": "#e6c07b",  // Warm yellow
-    "terminal-blue": "#61afef",     // Sky blue
-    "celeste-blue": "#56b6c2",     // Light teal
-    "light-sky-blue": "#61afef",   // Adjusted blue
-    "terminal-white": "#abb2bf",   // Light grey for text
-    "white-blue": "#a9b1d6",       // Soft blue
-    "blue-bell": "#7aa2f7",        // Light blue
-    "pastal-grey": "#cfc9c2",      // Light pastel grey
-    "terminal-magenta": "#c678dd", // Bright magenta
-    "blue-black": "#21252b",       // Darker blue-black
-    "terminal-black": "#1e2127",   // Even darker background
-    "t-background": "p:main-bg"    // Set background for terminal
+    "main-bg": "#282c34",       
+    "terminal-red": "#ff6c6b",   
+    "pistachio-green": "#98be65", 
+    "terminal-green": "#51afef",   
+    "terminal-yellow": "#e6c07b",
+    "terminal-blue": "#61afef",  
+    "celeste-blue": "#56b6c2", 
+    "light-sky-blue": "#61afef",
+    "terminal-white": "#abb2bf",
+    "white-blue": "#a9b1d6",      
+    "blue-bell": "#7aa2f7",
+    "pastal-grey": "#cfc9c2", 
+    "terminal-magenta": "#c678dd", 
+    "blue-black": "#21252b",
+    "terminal-black": "#1e2127", 
+    "t-background": "p:main-bg"
   },
   "blocks": [
     {
