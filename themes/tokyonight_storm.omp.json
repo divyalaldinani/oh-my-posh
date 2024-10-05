@@ -3,8 +3,8 @@
   "console_title_template": " {{ .Folder }} :: {{if .Root}}Admin{{end}}",
   "palette": {
     "main-bg": "#1e2127",          // Dark background
-    "terminal-red": "#F5004F",     // Bright reddish pink
-    "terminal-yellow": "#FFAF00",  // Bright orange
+    "terminal-red": "#FFAF00",     // Bright reddish pink
+    "terminal-yellow": "#F5004F",  // Bright orange
     "terminal-purple": "#7C00FE",  // Bright purple
     "terminal-black": "#1e2127",   // Dark background
     "t-background": "p:main-bg"    // Set background for terminal
