@@ -5,7 +5,7 @@
     "main-bg": "#1e2127",          // Dark background
     "terminal-red": "#F5004F",     // Bright reddish pink
     "terminal-yellow": "#F9E400",  // Bright yellow
-    "terminal-magenta": "#FFAF00", // Bright orange
+    "terminal-orange": "#FFAF00",  // Bright orange
     "terminal-purple": "#7C00FE",  // Bright purple
     "terminal-black": "#1e2127",   // Dark background
     "t-background": "p:main-bg"    // Set background for terminal
@@ -18,13 +18,13 @@
           "type": "text",
           "style": "plain",
           "background": "transparent",
-          "foreground": "p:terminal-red",
+          "foreground": "p:terminal-purple",
           "template": "\u279c "
         },
         {
           "type": "path",
           "style": "plain",
-          "foreground": "p:terminal-magenta",
+          "foreground": "p:terminal-orange",
           "properties": {
             "style": "folder"
           },
