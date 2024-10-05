@@ -2,22 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "console_title_template": " {{ .Folder }} :: {{if .Root}}Admin{{end}}",
   "palette": {
-    "main-bg": "#2e1a47",    
-    "terminal-red": "#ff4c6a",    
-    "pistachio-green": "#f2a900",  
-    "terminal-green": "#ffab40",  
-    "terminal-yellow": "#f3c528", 
-    "terminal-blue": "#6c4f8f",   
-    "celeste-blue": "#ff4c6a", 
-    "light-sky-blue": "#ff4c6a",   
-    "terminal-white": "#f4f4f4",   
-    "white-blue": "#f4f4f4",  
-    "blue-bell": "#9aa5ce",    
-    "pastal-grey": "#f4f4f4",   
-    "terminal-magenta": "#a74e88", 
-    "blue-black": "#4c2a5e",   
-    "terminal-black": "#1e2127",
-    "t-background": "p:main-bg" 
+    "main-bg": "#2e1a47",          // Dark purple background
+    "terminal-red": "#ff4c6a",     // Reddish pink for errors
+    "terminal-yellow": "#f3c528",  // Light yellow
+    "terminal-magenta": "#a74e88", // Bright purple
+    "terminal-black": "#1e2127",   // Dark background
+    "t-background": "p:main-bg"    // Set background for terminal
   },
   "blocks": [
     {
@@ -27,7 +17,7 @@
           "type": "text",
           "style": "plain",
           "background": "transparent",
-          "foreground": "p:terminal-blue",
+          "foreground": "p:terminal-red",
           "template": "\u279c "
         },
         {
@@ -37,17 +27,17 @@
           "properties": {
             "style": "folder"
           },
-          "template": "<b>{{ .Path }}</b> <p:light-sky-blue>\u26a1</>"
+          "template": "<b>{{ .Path }}</b> <p:terminal-yellow>\u26a1</>"
         },
         {
           "type": "git",
           "style": "plain",
-          "foreground": "p:light-sky-blue",
+          "foreground": "p:terminal-yellow",
           "foreground_templates": [
             "{{ if or (.Working.Changed) (.Staging.Changed) }}p:terminal-red{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0)}}p:light-sky-blue {{ end }}",
-            "{{ if gt .Ahead 0 }}p:terminal-blue{{ end }}",
-            "{{ if gt .Behind 0 }}p:celeste-blue{{ end }}"
+            "{{ if and (gt .Ahead 0) (gt .Behind 0)}}p:terminal-yellow{{ end }}",
+            "{{ if gt .Ahead 0 }}p:terminal-red{{ end }}",
+            "{{ if gt .Behind 0 }}p:terminal-red{{ end }}"
           ],
           "template": "({{ .HEAD}})",
           "properties": {
@@ -69,45 +59,9 @@
       "overflow": "hide",
       "segments": [
         {
-          "type": "node",
-          "style": "plain",
-          "foreground": "p:pistachio-green",
-          "template": "\ue718 {{ .Full }} "
-        },
-        {
-          "type": "php",
-          "style": "plain",
-          "foreground": "p:terminal-blue",
-          "template": "\ue73d {{ .Full }} "
-        },
-        {
-          "type": "python",
-          "style": "plain",
-          "foreground": "p:terminal-yellow",
-          "template": "\uE235 {{ .Full }}"
-        },
-        {
-          "type": "julia",
-          "style": "plain",
-          "foreground": "p:terminal-magenta",
-          "template": "\uE624 {{ .Full }}"
-        },
-        {
-          "type": "ruby",
-          "style": "plain",
-          "foreground": "p:terminal-red",
-          "template": "\uE791 {{ .Full}}"
-        },
-        {
-          "type": "go",
-          "style": "plain",
-          "foreground": "p:light-sky-blue",
-          "template": "\uFCD1 {{ .Full}}"
-        },
-        {
           "type": "command",
           "style": "plain",
-          "foreground": "p:white-blue",
+          "foreground": "p:terminal-yellow",
           "properties": {
             "command": "git log --pretty=format:%cr -1 || date +%H:%M:%S",
             "shell": "bash"
@@ -121,7 +75,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "p:pistachio-green",
+          "foreground": "p:terminal-yellow",
           "style": "plain",
           "template": "\u25b6",
           "type": "text"
@@ -132,12 +86,12 @@
   ],
   "secondary_prompt": {
     "background": "transparent",
-    "foreground": "p:terminal-blue",
+    "foreground": "p:terminal-red",
     "template": "\u279c "
   },
   "transient_prompt": {
     "background": "p:t-background",
-    "foreground": "p:terminal-blue",
+    "foreground": "p:terminal-red",
     "template": "\u279c "
   },
   "final_space": true,
