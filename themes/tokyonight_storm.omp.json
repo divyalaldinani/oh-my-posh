@@ -3,10 +3,10 @@
   "console_title_template": " {{ .Folder }} :: {{if .Root}}Admin{{end}}",
   "palette": {
     "main-bg": "#1e2127",          // Dark background
-    "terminal-red": "#E85C0D",     // Reddish color
-    "terminal-yellow": "#FABC3F",  // Yellow color
-    "terminal-magenta": "#C7253E", // Dark red color
-    "terminal-purple": "#A594F9",  // Bright purple
+    "terminal-red": "#F5004F",     // Bright reddish pink
+    "terminal-yellow": "#F9E400",  // Bright yellow
+    "terminal-magenta": "#FFAF00", // Bright orange
+    "terminal-purple": "#7C00FE",  // Bright purple
     "terminal-black": "#1e2127",   // Dark background
     "t-background": "p:main-bg"    // Set background for terminal
   },
