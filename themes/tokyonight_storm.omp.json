@@ -3,9 +3,8 @@
   "console_title_template": " {{ .Folder }} :: {{if .Root}}Admin{{end}}",
   "palette": {
     "main-bg": "#1e2127",          // Dark background
-    "terminal-red": "#F5004F",     // Bright yellow (previously reddish pink)
-    "terminal-yellow": "#F9E400",  // Bright reddish pink (previously yellow)
-    "terminal-orange": "#FFAF00",  // Bright orange
+    "terminal-red": "#F5004F",     // Bright reddish pink
+    "terminal-yellow": "#FFAF00",  // Bright orange
     "terminal-purple": "#7C00FE",  // Bright purple
     "terminal-black": "#1e2127",   // Dark background
     "t-background": "p:main-bg"    // Set background for terminal
@@ -24,21 +23,21 @@
         {
           "type": "path",
           "style": "plain",
-          "foreground": "p:terminal-orange",
+          "foreground": "p:terminal-yellow",
           "properties": {
             "style": "folder"
           },
-          "template": "<b>{{ .Path }}</b> <p:terminal-yellow>\u26a1</>"
+          "template": "<b>{{ .Path }}</b> <p:terminal-red>\u26a1</>"
         },
         {
           "type": "git",
           "style": "plain",
-          "foreground": "p:terminal-yellow",
+          "foreground": "p:terminal-red",
           "foreground_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:terminal-red{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0)}}p:terminal-yellow{{ end }}",
-            "{{ if gt .Ahead 0 }}p:terminal-red{{ end }}",
-            "{{ if gt .Behind 0 }}p:terminal-red{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}p:terminal-yellow{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0)}}p:terminal-red{{ end }}",
+            "{{ if gt .Ahead 0 }}p:terminal-yellow{{ end }}",
+            "{{ if gt .Behind 0 }}p:terminal-yellow{{ end }}"
           ],
           "template": "({{ .HEAD}})",
           "properties": {
