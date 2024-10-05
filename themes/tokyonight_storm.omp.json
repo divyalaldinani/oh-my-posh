@@ -2,10 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "console_title_template": " {{ .Folder }} :: {{if .Root}}Admin{{end}}",
   "palette": {
-    "main-bg": "#2e1a47",          // Dark purple background
-    "terminal-red": "#ff4c6a",     // Reddish pink for errors
-    "terminal-yellow": "#f3c528",  // Light yellow
-    "terminal-magenta": "#a74e88", // Bright purple
+    "main-bg": "#1e2127",          // Dark background
+    "terminal-red": "#E85C0D",     // Reddish color
+    "terminal-yellow": "#FABC3F",  // Yellow color
+    "terminal-magenta": "#C7253E", // Dark red color
+    "terminal-purple": "#A594F9",  // Bright purple
     "terminal-black": "#1e2127",   // Dark background
     "t-background": "p:main-bg"    // Set background for terminal
   },
