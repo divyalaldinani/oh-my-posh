@@ -62,7 +62,7 @@
         {
           "type": "command",
           "style": "plain",
-          "foreground": "#FF69B4",  // Changed to pink
+          "foreground": "#F5004F",  // Set timestamp color to bright pink
           "properties": {
             "command": "git log --pretty=format:%cr -1 || date +%H:%M:%S",
             "shell": "bash"
